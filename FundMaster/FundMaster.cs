@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace FundMaster
 {
-    public partial class Form1 : Form
+    public partial class FundMaster : Form
     {
-        public Form1()
+        public FundMaster()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

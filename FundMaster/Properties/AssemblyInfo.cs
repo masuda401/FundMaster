@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("FundMaster")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("株式会社SBI証券")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("FundMaster")]
-[assembly: AssemblyCopyright("Copyright © 株式会社SBI証券 2014")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
