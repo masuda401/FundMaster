@@ -74,11 +74,5 @@ namespace FundMaster
             this.Close();
         }
 
-        private void make()
-        {
-
-        }
-
-
     }
 }
