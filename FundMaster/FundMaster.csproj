@@ -67,6 +67,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBUtil.cs" />
+    <Compile Include="FundList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FundList.Designer.cs">
+      <DependentUpon>FundList.cs</DependentUpon>
+    </Compile>
     <Compile Include="HandingTypeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -91,12 +97,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FundList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FundList.Designer.cs">
+    <EmbeddedResource Include="FundList.resx">
       <DependentUpon>FundList.cs</DependentUpon>
-    </Compile>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,9 +116,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="FundList.resx">
-      <DependentUpon>FundList.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="HandingTypeDataSet.xsc">
       <DependentUpon>HandingTypeDataSet.xsd</DependentUpon>
     </None>
@@ -183,7 +183,7 @@
       <VersionMajor>5</VersionMajor>
       <VersionMinor>0</VersionMinor>
       <Lcid>0</Lcid>
-      <WrapperTool>primary</WrapperTool>
+      <WrapperTool>tlbimp</WrapperTool>
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
@@ -214,6 +214,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
